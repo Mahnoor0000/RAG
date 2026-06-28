@@ -1,0 +1,39 @@
+RAG
+
+RAG stands for Retrieval-Augmented Generation.
+
+It is a technique used to make LLM applications more accurate by giving the model extra information from external sources such as PDFs, documents, websites, databases, or notes.
+
+Why RAG is Needed
+
+LLMs do not always know private or updated information. They can also sometimes generate wrong answers. RAG solves this by first searching for relevant information and then giving that information to the LLM before it answers.
+
+How RAG Works
+
+RAG usually works in these steps:
+
+Load documents
+The system loads data from PDFs, text files, websites, or databases.
+Split text into chunks
+Large documents are divided into smaller pieces.
+Create embeddings
+Each chunk is converted into numerical form so the computer can understand its meaning.
+Store in vector database
+The embeddings are stored in a vector database like FAISS, Chroma, or Pinecone.
+Retrieve relevant chunks
+When the user asks a question, the system finds the most relevant chunks.
+Generate answer
+The LLM uses the retrieved context to generate a better and more accurate answer.
+Simple Example
+
+If a user asks a question from a PDF, RAG first finds the relevant pages or paragraphs from the PDF. Then the LLM answers using only that information.
+
+Benefits of RAG
+Gives more accurate answers
+Reduces hallucinations
+Allows LLMs to answer from private documents
+Works with PDFs, websites, databases, and notes
+No need to retrain the model
+Simple Meaning
+
+RAG = Search relevant information first, then use the LLM to answer based on that information.
