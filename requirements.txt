@@ -25,3 +25,7 @@ scikit-learn
 torch
 pypdf
 bs4
+tiktoken
+
+chromadb
+wikipedia
